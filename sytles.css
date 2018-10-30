@@ -1,14 +1,29 @@
-@keyframes cray {
-	0%   { top:    0px; left:   0px; background: SlateBlue; border-radius:  0%; transform: rotate(0deg)    skewY(0deg)  scale(1, 1);     }
-	25%  { top:  200px; left: 400px; background:      pink; border-radius:  0%; transform: rotate(30deg)   skewY(70deg) scale(1.5, 1.5); }
-	50%  { top: -100px; left: 900px; background:    orange; border-radius: 30%; transform: rotate(500deg)  skewY(40deg) scale(0.5, 0.5); }
-	75%  { top:  400px; left:   7px; background:     green; border-radius:  0%; transform: rotate(900deg)  skewY(70deg) scale(0.2, 0.2); }
-	100% { top:  600px; left: 700px; background:    yellow; border-radius: 50%; transform: rotate(1500deg) skewY(20deg) scale(0.8, 0.8); }
+@keyframes rainbow {
+      0% { background-position: 0% 0% }
+    100% { background-position: 100% 100% }
+}
+
+@keyframes usa {
+	  0% { background: white; }
+	 33% { background: white; }
+	 34% { background:  blue; }
+	 66% { background:  blue; }
+	 67% { background:   red; }
+	 99% { background:   red; }
+	100% { background: white; }
 }
 
 @keyframes compass {
-	0%   { transform: rotate(0deg)  }
-	100% { transform: rotate(360deg)}
+	  0% { transform: rotate(0deg)   }
+	100% { transform: rotate(360deg) }
+}
+
+@keyframes cray {
+	  0% { top:    0px; left:   0px; background: SlateBlue; border-radius:  0%; transform: rotate(0deg)    skewY(0deg)  scale(1, 1);     }
+	 25% { top:  200px; left: 400px; background:      pink; border-radius:  0%; transform: rotate(30deg)   skewY(70deg) scale(1.5, 1.5); }
+	 50% { top: -100px; left: 900px; background:    orange; border-radius: 30%; transform: rotate(500deg)  skewY(40deg) scale(0.5, 0.5); }
+	 75% { top:  400px; left:   7px; background:     green; border-radius:  0%; transform: rotate(900deg)  skewY(70deg) scale(0.2, 0.2); }
+	100% { top:  600px; left: 700px; background:    yellow; border-radius: 50%; transform: rotate(1500deg) skewY(20deg) scale(0.8, 0.8); }
 }
 
 .trigger {
@@ -113,6 +128,16 @@
 	border-radius: 50% 0 50% 50%;
 	transition-duration: 500ms;
 	animation: compass 2s linear infinite;
+}
+
+.cube--rainbow {
+	background: linear-gradient(135deg, white,white,white,red,orange,yellow,green,blue,indigo,violet,white,white,white);
+	background-size: 800% 800%;
+	animation: rainbow 1s linear infinite;
+}
+
+.cube--usa {
+	animation: usa 500ms linear infinite;
 }
 
 .cube--cray {

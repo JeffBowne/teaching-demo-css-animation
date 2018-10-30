@@ -59,6 +59,16 @@ $(document).ready(function() {
 		highlightSelectedTrigger();
 	});
 
+	$('#trigger-rainbow').click( function() {
+		$('#cube').toggleClass('cube--rainbow');
+		highlightSelectedTrigger();
+	});
+
+	$('#trigger-usa').click( function() {
+		$('#cube').toggleClass('cube--usa');
+		highlightSelectedTrigger();
+	});
+
 	$('#trigger-compass').click( function() {
 		$('#cube').toggleClass('cube--compass');
 		highlightSelectedTrigger();
